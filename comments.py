@@ -12,6 +12,10 @@ class UserComments:
         UserComments.comments_list.append(self)
 
 
+    def deleteComment(self):
+        UserComments.comments_list.remove(self)    
+
+
 
 
 
