@@ -29,15 +29,15 @@ password = input ("enter your password")
 name = input ("enter your name")
 # info = user_info [password] = name
 if name == "Andrew":
-	print ("welcome admin")
+	print ("\nwelcome admin")
 	print ("Select the comment you want to edit")
 	print ("Select the comment to delete")
 elif name == 'Liz':
-	print ("welcome user")
+	print ("\nwelcome user")
 	print ("Click here to view your comments")
 	print ("Edit your comments")
 else:
-	print ("Click here to view your comments")
+	print ("\nClick here to view your comments")
 	print ("Edit your comments")
 	print ("Delete comments")
 
