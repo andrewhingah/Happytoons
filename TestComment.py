@@ -31,9 +31,12 @@ class TestComment(unittest.TestCase):
         self.comment.save_comment()
         self.test_comment=UserComments("mike","good place")
         self.test_comment.save_comment()
-
         self.test_comment.deleteComment()
+        self.assertEqual(len(UserComments.comments_list),1)  
 
-        self.assertEqual(len(UserComments.comments_list),1)    
+
+
+    def test_show_comments(self):
+        self.assertEqual(UserComments.displayComments(),UserComments.comments_list)     
 
                     

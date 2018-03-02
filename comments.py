@@ -13,7 +13,12 @@ class UserComments:
 
 
     def deleteComment(self):
-        UserComments.comments_list.remove(self)    
+        UserComments.comments_list.remove(self)
+
+    @classmethod
+    def displayComments(cls):
+        return cls.comments_list
+
 
 
 
